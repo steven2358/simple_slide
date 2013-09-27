@@ -20,7 +20,8 @@ function show_next(ul_id, fadetime) {
 function simple_slide(ul_id, duration, fadetime){	
 	$("#"+ul_id+" li").css({opacity: 0});
 	$("#"+ul_id+" li:first").show().addClass("active").css({opacity: 1});
-
+	
+	// rotate all images
 	play = setInterval(function(){
 		show_next(ul_id);
 	}, duration);
